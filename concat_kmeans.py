@@ -27,13 +27,11 @@ if __name__ == "__main__":
     dataset = "ImageNet-Dogs"
     # ["CIFAR-10", "CIFAR-20", "STL-10", "ImageNet-10", "ImageNet-Dogs",
     # "DTD", "UCF101", "ImageNet"
-    # 'ImageNet-C', 'ImageNet-V2', 'ImageNet-S', 'ImageNet-A','ImageNet-R',
     # 'Cars', 'Pets', 'Flowers', 'Food', 'Aircraft'
     # ]
     tau = 0.007
     # [0.009, 0.008, 0.01, 0.006, 0.007,
     # 0.01, "0.01", 0.006
-    # 0.007, 0.004, '0.006', '0.007', '0.005'
     # '0.01', '0.01', '0.009', '0.01', '0.008'
     # ]
 
