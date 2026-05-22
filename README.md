@@ -8,7 +8,7 @@ Existing filtering strategies are predominantly based on the off-the-shelf featu
 To fill this gap, we propose a novel gradient-based framework, termed as GradNorm, which is theoretically guaranteed and shows strong empirical performance. In particular, we measure the positiveness of each noun based on the magnitude of gradients back-propagated from the cross-entropy between the predicted target distribution and the softmax output. Theoretically, we provide a rigorous error bound to quantify the separability of positive nouns by GradNorm and prove that GradNorm naturally subsumes existing filtering strategies as extremely special cases of itself. Empirically, extensive experiments show that GradNorm achieves the state-of-the-art clustering performance on various benchmarks.*
 
 # Usage
-https://1drv.ms/f/c/9ec3074c407dadd3/IgCsXBnSD0AeQ6Je0C7Bf5JLARi6MH31zwV0yEwh4RmnB2g?e=SXvuol
+Donwload [pre-trained weights](https://1drv.ms/f/c/9ec3074c407dadd3/IgCsXBnSD0AeQ6Je0C7Bf5JLARi6MH31zwV0yEwh4RmnB2g?e=SXvuol) and move it to the `./data` folder.
 To improve the readability and extendibility of the code, we split different steps of our GradNorm method into separate `.py` files. Below is the step-by-step tutorial. Note that the intermediate results would be saved to the `./data` folder.
 
 ## Image and Text Embedding Inference
