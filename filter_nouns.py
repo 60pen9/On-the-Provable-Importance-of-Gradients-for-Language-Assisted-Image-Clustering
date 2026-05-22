@@ -22,24 +22,20 @@ if __name__ == "__main__":
     dataset = "CIFAR-20"
     # 　["CIFAR-10", "CIFAR-20", "STL-10", "ImageNet-10", "ImageNet-Dogs",
     # "DTD", "UCF101", "ImageNet",
-    # 'ImageNet-C', 'ImageNet-V2', 'ImageNet-S', 'ImageNet-A','ImageNet-R'
     # 'Cars', 'Pets', 'Flowers', 'Food', 'Aircraft']
     cluster_num = 200
     # [250, 200, 30, 50, 50,
     # 180, 303, 2000
-    # 'ImageNet-C', 'ImageNet-V2', 'ImageNet-S', 'ImageNet-A', 'ImageNet-R'
     # 'Cars', '120', '300', '1200', '300'
     # ]
     temp = 0.08
     #[0.06, 0.08, 0.08, 0.018, 0.02,
-    # 0.08, 303, 0.02
-    # 0.02, '0.02', '0.03', '0.008', '0.02'
+    # 0.08, 0.02, 0.02
     # '0.01', '0.01', '0.01', '0.01', '0.02'
     # ]
     topK = 5
     #[5, 5, 5, 5, 5,
-    # 5, 303, 3
-    # 'ImageNet-C', '1', '3', '1', '3'
+    # 5, 5, 3
     # '5', '5', '5', '5', '5'
     # ]
     p = 2.0
