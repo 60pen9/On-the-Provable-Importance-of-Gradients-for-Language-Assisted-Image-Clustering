@@ -54,10 +54,8 @@ if __name__ == "__main__":
         cluster_num = 47
     elif dataset == "UCF101":
         cluster_num = 101
-    elif dataset == "ImageNet" or dataset == "ImageNet-C" or dataset == "ImageNet-V2" or dataset == "ImageNet-S":
+    elif dataset == "ImageNet":
         cluster_num = 1000
-    elif dataset == "ImageNet-R" or dataset == "ImageNet-A":
-        cluster_num = 200
     elif dataset == "Cars":
         cluster_num = 196
     elif dataset == "Pets":
