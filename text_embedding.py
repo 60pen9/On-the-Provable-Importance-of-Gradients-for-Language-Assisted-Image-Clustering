@@ -61,7 +61,8 @@ else:
 
 for index in range(len(SIMPLE_IMAGENET_TEMPLATES)):
     # embedding = np.load("./data/ViT-B32/nouns_embedding_prompt_" + str(index) + ".npy")
-    embedding = np.load("./data/nouns_embedding_prompt_" + str(index) + ".npy")
+    # embedding = np.load("./data/nouns_embedding_prompt_" + str(index) + ".npy")
+    embedding = np.load("./data/" + backbone + "/nouns_embedding_prompt_" + str(index) + ".npy")
     embeddings += embedding
 embeddings = embeddings / len(SIMPLE_IMAGENET_TEMPLATES)
 # np.save("./data/ViT-B16/nouns_embedding_ensemble.npy", embeddings)
