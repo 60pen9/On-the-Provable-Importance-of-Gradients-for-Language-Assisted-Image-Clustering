@@ -80,9 +80,9 @@ if dataset == "CIFAR-20":
             labels_test[labels_test_copy == j] = i
 
 if not dataloader_train is None:
-    np.save("./data/" + dataset + "_image_embedding_train.npy", features)
-    np.savetxt("./data/" + dataset + "_labels_train.txt", labels)
+    np.save("./data/" + backbone + "/" + dataset + "/" + dataset + "_image_embedding_train.npy", features)
+    np.savetxt("./data/" + backbone + "/" + dataset + "/" + dataset + "_labels_train.txt", labels)
 
 
-np.save("./data/" + dataset + "_image_embedding_test.npy", features_test)
-np.savetxt("./data/" + dataset + "_labels_test.txt", labels_test)
+np.save("./data/" + backbone + "/" + dataset + "/" + dataset + "_image_embedding_test.npy", features_test)
+np.savetxt("./data/" + backbone + "/" + dataset + "/" + dataset + "_labels_test.txt", labels_test)
