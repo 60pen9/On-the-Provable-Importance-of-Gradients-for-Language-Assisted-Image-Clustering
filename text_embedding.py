@@ -48,9 +48,8 @@ for index in range(len(SIMPLE_IMAGENET_TEMPLATES)):
             print(f"[Completed {i * batch_size}/{nouns_num}]")
     features = np.concatenate(features, axis=0)
     print("Feature shape:", features.shape)
-    # np.save("./data/ViT-B16/nouns_embedding_prompt_" + str(index) + ".npy", features)
-    np.save("./data/nouns_embedding_prompt_" + str(index) + ".npy", features)
-
+    # np.save("./data/nouns_embedding_prompt_" + str(index) + ".npy", features)
+    np.save("./data/" + backbone + "/nouns_embedding_prompt_" + str(index) + ".npy", features)
 
 # Multi Prompts
 if backbone == "ViT-L/14":
@@ -66,8 +65,7 @@ for index in range(len(SIMPLE_IMAGENET_TEMPLATES)):
     embeddings += embedding
 embeddings = embeddings / len(SIMPLE_IMAGENET_TEMPLATES)
 # np.save("./data/ViT-B16/nouns_embedding_ensemble.npy", embeddings)
-np.save("./data/nouns_embedding_ensemble.npy", embeddings)
-
+np.save("./data/" + backbone + "/nouns_embedding_ensemble.npy", embeddings)
 
 
 # from Class_Name import class_name
